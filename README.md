@@ -1,2 +1,2 @@
 # Pyhton-CSV-Utils
-A useful Python 2 - 3 CSV Parser and Dumper Class
+ useful Python 2 - 3 Libraries and Tools for managing files
