@@ -1,2 +1,2 @@
 # Iriven Python Tools
- useful Python 2 - 3 Libraries and Tools for managing files
+ Useful Python 2 - 3 Libraries and Tools to Configuration files
