@@ -19,3 +19,7 @@ class Iriven_ClassInfos(object):
             if not name.startswith('__') and inspect.ismethod(attr):
                 method[name] = attr
         return method
+    
+    
+    if __name__ == "__main__":
+        sys.exit(main())
