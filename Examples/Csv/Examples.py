@@ -19,8 +19,8 @@ if __name__ == "__main__":
     '''
     the Reflection Class
     '''
-    CSVParserProp = Iriven_ClassInfos(fileloader)
-    print(CSVParserProp.GetMethods())
+    CSVParserinfos = Iriven_ReflectionClass(fileloader)
+    print(CSVParserinfos.GetMethods())
     
     '''
     the Dumper Class
