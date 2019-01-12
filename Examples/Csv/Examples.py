@@ -1,6 +1,7 @@
+#coding: utf-8
 import sys 
 import os
-PackageDir = "./IrivenPythonTools"
+PackageDir = "../../IrivenPythonTools"
 sys.path.append(os.path.abspath(PackageDir))
 from IrivenBootstrap import *
 if __name__ == "__main__":
