@@ -6,7 +6,11 @@ sys.path.append(os.path.abspath(IrivenPackageLocation))
 from IrivenBootstrap import *
 if __name__ == "__main__":
     fileloader = Iriven_CSVParser("./testFile.csv")
+    '''
+    to test with a non standard delimiter, just call the setDelimiter() method:
+    fileloader = Iriven_CSVParser("./nonStd_testFile.csv")
     fileloader.setDelimiter(":")
+    '''
     fileloader.parse()
     print(fileloader.getNumRows())
     print(fileloader.fetchRows(("osadmin" , "root")))
