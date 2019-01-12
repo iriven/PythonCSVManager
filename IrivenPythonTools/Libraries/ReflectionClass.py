@@ -21,5 +21,5 @@ class Iriven_ClassInfos(object):
         return method
     
     
-    if __name__ == "__main__":
-        sys.exit(main())
+if __name__ == "__main__":
+    sys.exit(main())
