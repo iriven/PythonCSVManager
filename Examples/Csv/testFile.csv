@@ -1,1 +1,11 @@
-
+server1,user0,home10,password10
+server1,user1,home11,password11
+server2,user1,home21,password21
+server2,user2,home22,password22
+server2,user3,home23,password23
+server3,admin,home0,password0
+server3,staff,home1,password1
+server3,root,home,passwordr
+server3,user1,home31,password31
+server3,user2,home32,password32
+server3,user3,home33,password33
