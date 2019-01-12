@@ -1,8 +1,8 @@
 #coding: utf-8
 import sys 
 import os
-PackageDir = "../../IrivenPythonTools"
-sys.path.append(os.path.abspath(PackageDir))
+IrivenPackageLocation = "../../IrivenPythonTools"
+sys.path.append(os.path.abspath(IrivenPackageLocation))
 from IrivenBootstrap import *
 if __name__ == "__main__":
     fileloader = Iriven_CSVParser("./testfile.csv")
