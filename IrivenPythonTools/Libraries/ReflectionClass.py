@@ -1,6 +1,6 @@
 #coding: utf-8
 import inspect
-class Iriven_ClassInfos(object):
+class Iriven_ReflectionClass(object):
     def __init__(self, clsobj):
         self.clsobj = clsobj
 
