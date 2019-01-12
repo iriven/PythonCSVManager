@@ -5,11 +5,11 @@ IrivenPackageLocation = "../../IrivenPythonTools"
 sys.path.append(os.path.abspath(IrivenPackageLocation))
 from IrivenBootstrap import *
 if __name__ == "__main__":
-    fileloader = Iriven_CSVParser("./testfile.csv")
+    fileloader = Iriven_CSVParser("./testFile.csv")
     fileloader.setDelimiter(":")
     fileloader.parse()
     print(fileloader.getNumRows())
-    print(fileloader.fetchRows())
+    print(fileloader.fetchRows(("osadmin" , "root")))
     print(fileloader.getRows())
     CSVParserProp = Iriven_ClassInfos(fileloader)
     print(CSVParserProp.GetMethods())
