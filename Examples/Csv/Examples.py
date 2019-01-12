@@ -13,13 +13,20 @@ if __name__ == "__main__":
     '''
     fileloader.parse()
     print(fileloader.getNumRows())
-    print(fileloader.fetchRows(("osadmin" , "root")))
+    print(fileloader.fetchRows(("user1" , "admin","staff")))
     print(fileloader.getRows())
+    
+    '''
+    the Reflection Class
+    '''
     CSVParserProp = Iriven_ClassInfos(fileloader)
     print(CSVParserProp.GetMethods())
-
+    
+    '''
+    the Dumper Class
+    '''
     filecreator = Iriven_CSVDumper()
-    filecreator.setDestination('./fileCreated1.csv')
+    filecreator.setDestination('./CreatedFile.csv')
     filecreator.save(fileloader.fetchRows(("osadmin" , "root")))
     s = "----------------------------------------------------------" + eol
     for row in fileloader.fetchRows(("osadmin" , "admplat")):
