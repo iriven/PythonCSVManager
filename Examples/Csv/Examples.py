@@ -27,9 +27,9 @@ if __name__ == "__main__":
     '''
     filecreator = Iriven_CSVDumper()
     filecreator.setDestination('./CreatedFile.csv')
-    filecreator.save(fileloader.fetchRows(("osadmin" , "root")))
+    filecreator.save(fileloader.fetchRows(("admin" , "root")))
     s = "----------------------------------------------------------" + eol
-    for row in fileloader.fetchRows(("osadmin" , "admplat")):
+    for row in fileloader.fetchRows(("admin","staff")):
         s += "Server : " + row[0] + eol
         s += "User : " + row[1] + eol
         s += "Password : " + row[2] + eol
