@@ -3,7 +3,7 @@ import sys
 import os
 IrivenPackageLocation = "../../IrivenPythonTools"
 sys.path.append(os.path.abspath(IrivenPackageLocation))
-from IrivenBootstrap import *
+from IrivenPyBootstrap import *
 if __name__ == "__main__":
     fileloader = Iriven_CSVParser("./testFile.csv")
     '''
