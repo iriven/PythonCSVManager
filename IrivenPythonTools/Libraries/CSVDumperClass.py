@@ -11,7 +11,7 @@ class Iriven_CSVDumper(object):
     csv.QUOTE_NONE - Do not quote anything on output
     '''
     def __init__(self, delimiter=',', quotechar='"', quoting=csv.QUOTE_NONNUMERIC, lineterminator='\n'):
-        self.csvFile = './fileCreated.csv'
+        self.csvFile = './CreatedFile.csv'
         self.delimiter = delimiter
         self.quotechar = quotechar
         self.quoting = quoting
@@ -31,13 +31,13 @@ class Iriven_CSVDumper(object):
     
     def setDestination(self, csvFile):
         try:
-            if self.isValidPathname(csvFile):
+            if self.__isValidPathname(csvFile):
                 self.csvFile = csvFile
         except IOError  as e:
             sys.exit('I/O error(%s): %s' % (e.errno, e.strerror))
         
     
-    def isValidPathname(self, pathname: str)->bool:
+    def __isValidPathname(self, pathname: str)->bool:
         try:
             if not isinstance(pathname, str) or not pathname:
                 return False
